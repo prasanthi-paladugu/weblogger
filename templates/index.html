@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Blog Posts</title>
+</head>
+<body>
+<h2>hello admin your posts are:</h2>
+<a href="add">Add Post</a><br/>
+
+<ul>{% for i in posts %}
+  <li><a href="/update/{{ i.id }}">Edit post</a> <a href="/delete/{{ i.id }}" >Delete</a>
+    <ul>
+      <li>Title: {{i.title}}</li>
+      <li>Description: {{i.description}}</li>
+    </ul>
+  </li>
+  {% endfor %}
+<ul>
+</body>
+</html>

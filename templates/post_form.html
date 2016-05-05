@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Add post_form</title>
+</head>
+
+<body align="center">
+	<form action="" method="POST">
+	<!--	<input type="integer"  name="id" placeholder="Enter id" /> <br/>
+		<input type="text" name="title" placeholder="Enter Title"> <br/>
+		<textarea type="text" name="desc" placeholder="Enter Description"> </textarea> <br/>-->
+
+		{{ post_form.title.label }} {{ post_form.title(size=20) }}<br/>
+		{{ post_form.description.label }} {{ post_form.description(size=100) }}<br/>
+		<input type="submit" value="post"  align="center"/>
+	</form>
+</body>
+</html>
